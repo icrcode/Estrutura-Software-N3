@@ -10,6 +10,7 @@ SE NÃO, POR QUE NÃO CONSEGUIU CHEGAR NO RESULTADO?
 R.:
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
