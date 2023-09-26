@@ -12,11 +12,11 @@ R.:
 
 #include <stdio.h>
 #include <math.h>
-
 #include <time.h>
-
 #include "bubbleSort.h"
 #include "insertionSort.h"
+#include "selectionSort.h"
+
 
 #define TAMANHO 10000
 
@@ -28,15 +28,18 @@ void imprimirVetor(int *vet);
 int main (void){
 // Variáveis
     int vet1[TAMANHO];
+
 // Entrada de dados;
     geraNumero(vet1,2);
+
 // printf("Desordenado: \n\n");
 // imprimirVetor(vet1);
+
 // Processamentos dos dados
 
-    //bubbleSort(vet1);
-
-    insertionSort(vet1);
+        //bubbleSort(vet1);
+        //insertionSort(vet1);
+        //selectionSort(vet1);
 
 // Saída de dados
 // printf("\n\nOrdenado: \n\n");
@@ -44,7 +47,6 @@ int main (void){
     return 0;
 }
 
-// Função geração de números
 void geraNumero(int *vet, int op) {
     int i, j;
     switch (op) {
@@ -66,7 +68,6 @@ void geraNumero(int *vet, int op) {
     }
 }
 
-// Função impressão do vetor
 void imprimirVetor(int *vet){
     int i;
     for (i=0; i<TAMANHO;i++){
@@ -75,4 +76,4 @@ void imprimirVetor(int *vet){
             printf("\n");
         }
     }
-} 
+}

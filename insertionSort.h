@@ -3,34 +3,24 @@
 void insertionSort(int *vet){
     int eleito, i, j, qtd_trocas, qtd_comparacoes;
 
-    eleito = 0;
     qtd_trocas = 0;
     qtd_comparacoes = 0;
 
-    // Ponto do algoritmo para iniciar o tempo de execução
     float tempo_inicial = clock();
     for (i = 1; i <= TAMANHO - 1; i++) {
         eleito = vet[i];
         j = i - 1;
-        // Ponto do algoritmo para contar as comparações e trocas
-        qtd_comparacoes++;
-        qtd_trocas++;
+        qtd_comparacoes++;//Compara
+        qtd_trocas++;//Troca
         while (j >= 0 && vet[j] > eleito) {
-            // Ponto do algoritmo para contar as comparações
-
-            qtd_comparacoes++;
+            qtd_comparacoes++;//Compara
             vet[j + 1] = vet[j];
             j = j - 1;
-            // Ponto do algoritmo para contar as trocas
-
-            qtd_trocas++;
-
+            qtd_trocas++;//Troca
         }
         vet[j + 1] = eleito;
-        qtd_trocas++;
+        qtd_trocas++;//Troca
     }
-
-    // Ponto do algoritmo para calcular o tempo de execução
     float tempo_final = clock() - tempo_inicial;
 
     // Saída de dados
