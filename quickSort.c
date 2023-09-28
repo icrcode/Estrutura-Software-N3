@@ -70,7 +70,7 @@ int particao(int *vet, int comeco, int fim)
         do
         {
             qtd_comparacoes++;//ambas as situações são comparações
-            j = j - 1; //decrementa o j 
+            j = j - 1; //decrementa o j
         } while (vet[j] > pivo);//até encontrar um indice do array que seja menor que o pivo
         if (i < j) //se houver uma troca das condições, algo maior na esquerda e menor na direita
         {
