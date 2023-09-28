@@ -27,9 +27,7 @@ void bubbleSort(int *vet){
     }
     // Ponto do algoritmo para calcular o tempo de execução
     float tempo_final = clock() - tempo_inicial;
-    // Saída de dados
-    printf("Esse e o Insertion Bubble Sort");
+
     printf("\nQuantidade de comparacoes: %i\n",qtd_comparacoes);
     printf("Quantidade de trocas: %i\n",qtd_trocas);
-    printf("Tempo de execucao do algoritmo: %.3f",tempo_final/1000);
 }

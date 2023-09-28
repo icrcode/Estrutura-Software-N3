@@ -26,10 +26,7 @@ void selectionSort(int *vet){
             vet[pos] = eleito;
         }
     }
-    float tempo_final = clock() - tempo_inicial;
-    // Saída de dados
-    printf("Esse e o Insertion Selection Sort");
+
     printf("\nQuantidade de comparacoes: %i\n",qtd_comparacoes);
     printf("Quantidade de trocas: %i\n",qtd_trocas);
-    printf("Tempo de execucao do algoritmo: %.3f",tempo_final/1000);
 }

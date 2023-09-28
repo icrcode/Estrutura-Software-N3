@@ -17,6 +17,7 @@ R.:
 #include "bubbleSort.h"
 #include "insertionSort.h"
 #include "selectionSort.h"
+#include "mergeSort.h"
 
 
 #define TAMANHO 10000
@@ -31,7 +32,7 @@ int main (void){
     int vet1[TAMANHO];
 
 // Entrada de dados;
-    geraNumero(vet1,2);
+    geraNumero(vet1,1);
 
 // printf("Desordenado: \n\n");
 // imprimirVetor(vet1);
@@ -41,6 +42,11 @@ int main (void){
         //bubbleSort(vet1);
         //insertionSort(vet1);
         //selectionSort(vet1);
+
+        //merge(vet1, 0, TAMANHO - 1);
+        //printf("\nQuantidade de comparacoes: %i\n",qtd_comparacoes);
+        //printf("Quantidade de trocas: %i\n",qtd_trocas);
+
 
 // Saída de dados
 // printf("\n\nOrdenado: \n\n");
