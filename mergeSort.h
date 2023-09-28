@@ -21,7 +21,7 @@ void intercala(int x[], int inicio, int fim, int meio) {
     int aux[TAMANHO];
 
     while (iniciovetor1 <= meio && iniciovetor2 <= fim) {
-        qtd_trocas++;
+        qtd_trocas++; //troca
         if (x[iniciovetor1] <= x[iniciovetor2]) {
             aux[poslivre] = x[iniciovetor1];
             iniciovetor1++;
@@ -30,19 +30,19 @@ void intercala(int x[], int inicio, int fim, int meio) {
             iniciovetor2++;
         }
         poslivre++;
-        qtd_comparacoes++;
+        qtd_comparacoes++; //compara
     }
 
     for (i = iniciovetor1; i <= meio; i++) {
         aux[poslivre] = x[i];
         poslivre++;
-        qtd_trocas++;
+        qtd_trocas++; //troca
     }
 
     for (i = iniciovetor2; i <= fim; i++) {
         aux[poslivre] = x[i];
         poslivre++;
-        qtd_trocas++;
+        qtd_trocas++; //troca
     }
 
     for (i = inicio; i <= fim; i++) {
