@@ -59,6 +59,7 @@ int particao(int *vet, int comeco, int fim)
     int pivo = vet[(comeco + fim) / 2]; //indice que vira pivo
     int i = comeco - 1;//i vira um indice antes do primeiro
     int j = fim + 1;//j vira um indice depois do ultimo
+    int temp; //variavel auxiliar
     while (i<j)//começo até o fim
     {
         do
@@ -74,7 +75,7 @@ int particao(int *vet, int comeco, int fim)
         if (i < j) //se houver uma troca das condições, algo maior na esquerda e menor na direita
         {
             qtd_trocas++;
-            int temp = vet[i];
+            temp = vet[i];
             vet[i] = vet[j];
             vet[j] = temp;
             //bloco da troca
